@@ -1,0 +1,15 @@
+#iconos{
+    grid-area: 1 / 1 / span 1 / span 12 ;
+    display: flex;
+    position: sticky;
+    background-color: #96551d;
+    border: 1px solid black ;
+    margin: 0;
+    padding: 0;
+}
+#iconos > .iconos-izquierda{
+    flex: 1;
+    order: 1 ;
+}
+#iconos > .iconos-derecha{
+    order: 2;
