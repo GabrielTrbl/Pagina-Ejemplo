@@ -5,6 +5,18 @@
       .menu ul {
         flex-direction: column; /* Cambia el menú a una lista vertical en pantallas pequeñas */
       }
+      .Mejores-Ofertas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 3 columnas para la lista de productos */
+        gap: 20px; /* Espacio entre las columnas */
+        margin: 1%;
+        width: 100%;
+        overflow: scroll;
+    }
+    .Producto-Oferta{
+        border: 1px solid #ddd;
+        overflow: scroll;
+    }
 }
 
 body{
@@ -140,7 +152,7 @@ body{
    }
 
 article{
-    grid-area: 5 / 1 / span 1 / span 12;
+    grid-area: 5 / 1 / span 3 / span 12;
 }
 article h2 {
     display: flex;
@@ -155,10 +167,10 @@ article h2 {
     grid-template-columns: repeat(4, 1fr); /* 3 columnas para la lista de productos */
     gap: 20px; /* Espacio entre las columnas */
     margin: 1%;
+    width: 100%;
 }
 .Producto-Oferta{
     border: 1px solid #ddd;
-    padding: 5%;
 }
 
 .Imagen-O{
@@ -173,7 +185,7 @@ article h2 {
 .Precio-O{ color:  black;}
 
 footer{
-    grid-area: 6 / 1 / span 1 / span 12;
+    grid-area: 8 / 1 / span 1 / span 12;
 }
 .Tabla-interactiva{
     display: flex;
